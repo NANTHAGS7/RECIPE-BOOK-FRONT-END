@@ -1,0 +1,13 @@
+.boxy{
+    /* width:100px;
+    height:100px;
+    border-radius: 15px;
+    border-color: bisque; */
+    border: 10px solid black;
+}
+
+.xy{
+    width:100px;
+    height:100px;
+    background-color: antiquewhite;
+}

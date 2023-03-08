@@ -1,0 +1,29 @@
+.cont1{
+    width: 50px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 10px solid #555;
+  outline: none;
+}
+
+.cont1:focus{
+    background-color:antiquewhite;
+    border:2px solid black;
+}
+.cont2{
+   padding: 10px;
+   padding-left: 20px;
+   padding-right: 20px; 
+   font-weight: bolder;
+   font-size: larger;
+}
+
+.cont2:hover{
+
+    text-transform: capitalize;
+}
+
+.cont3{
+    text-align: center;
+}

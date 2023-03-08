@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Navbar from "./Components/Navbar";
+
+import FoodDeletePage from "./Pages/DeleteRecipe";
+import FoodPage from "./Pages/GetRecipe";
+import FoodStartPage from "./Pages/GetRecipeByName";
+import Home from "./Pages/Home";
+import FoodPostPage from "./Pages/PostRecipe";
+import FoodUpdatePage from "./Pages/UpdateRecipe";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    return (
+      <div className="App">
+        <BrowserRouter>
+      <Routes>
+        
+          <Route path="/" element={<Home />} />
+          <Route path="/all" element={<FoodPage />} />
+          <Route path="/byname" element={<FoodStartPage />} />
+          <Route path="/create" element={<FoodPostPage />} />
+          <Route path="/update" element={<FoodUpdatePage />} />
+          <Route path="/delete" element={<FoodDeletePage />} />
+      </Routes>
+    </BrowserRouter>
     </div>
-  );
-}
+      );
+    }
 
-export default App;
+    export default App;
+

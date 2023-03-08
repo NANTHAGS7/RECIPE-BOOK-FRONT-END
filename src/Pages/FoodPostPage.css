@@ -1,0 +1,77 @@
+.food-post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form1 {
+    margin-top: 20px;
+    width:400px;
+    height:500px;
+    background:#00bfff;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding-top: 40px;
+    padding-left: 100px;
+    border-radius: 30px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .cotton{
+    background-color:#EE9A4D;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .cotton:hover {
+    background-color: black;
+    text-transform: capitalize;
+    border-radius: 15px;
+  }
+  
+  @media (min-width: 768px) {
+    .form-field {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .form-field label {
+      margin-right: 10px;
+      width: 100px;
+      text-align: right;
+    }
+  
+    input[type="text"] {
+      width: 250px;
+      margin-right: 10px;
+    }
+  }
+  
